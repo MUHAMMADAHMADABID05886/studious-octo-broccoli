@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+            <style>.lw { font-size: 60px; }</style>
+        </head>
+        <body>
+            
+
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="BrightSmile Dental Care – modern, gentle, and family-friendly dental clinic in the USA. Book your appointment today!">
+  <title>BrightSmile Dental Care | Your Smile, Our Passion</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      color: #222;
+      background: #f8faff;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      padding: 1rem 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    header h1 {
+      color: #0077cc;
+      font-weight: 700;
+      font-size: 1.4rem;
+    }
+
+    nav a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #0077cc;
+    }
+
+    /* HERO */
+    .hero {
+      background: linear-gradient(to right, rgba(0, 119, 204, 0.85), rgba(0, 181, 255, 0.85)),
+                  url('https://images.unsplash.com/photo-1588776814546-ec8c3a89d3b2?auto=format&fit=crop&w=1600&q=80');
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      padding: 10rem 5% 8rem 5%;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .hero h2 {
+      font-size: 2.8rem;
+      max-width: 700px;
+      line-height: 1.2;
+      animation: fadeDown 1s ease forwards;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 1rem auto 2rem;
+      animation: fadeUp 1s ease forwards;
+    }
+
+    .btn {
+      background: #fff;
+      color: #0077cc;
+      border: none;
+      padding: 0.9rem 2rem;
+      border-radius: 50px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #0077cc;
+      color: #fff;
+      transform: translateY(-2px);
+    }
+
+    /* SERVICES */
+    section {
+      padding: 6rem 5%;
+      text-align: center;
+    }
+
+    h2.section-title {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #0077cc;
+    }
+
+    p.section-subtitle {
+      color: #666;
+      margin-bottom: 3rem;
+      font-size: 1.1rem;
+    }
+
+    .grid {
+      display: grid;
+      gap: 2rem;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(10px);
+      border-radius: 15px;
+      padding: 2rem 1.5rem;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+      transition: all 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+
+    .card h3 {
+      color: #0077cc;
+      margin-bottom: 0.5rem;
+    }
+
+    /* PRODUCTS */
+    .products {
+      background: #eef8ff;
+    }
+
+    /* TESTIMONIALS */
+    .testimonial {
+      background: #fff;
+      border-left: 5px solid #0077cc;
+      border-radius: 10px;
+      padding: 2rem;
+      text-align: left;
+      transition: 0.3s;
+    }
+
+    .testimonial:hover {
+      transform: translateY(-5px);
+    }
+
+    .testimonial strong {
+      display: block;
+      margin-top: 1rem;
+      color: #0077cc;
+    }
+
+    /* CONTACT */
+    .contact {
+      background: linear-gradient(120deg, #0077cc, #00aaff);
+      color: #fff;
+      padding: 5rem 5%;
+      border-radius: 20px 20px 0 0;
+    }
+
+    form {
+      max-width: 600px;
+      margin: 2rem auto 0;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    input, textarea {
+      padding: 1rem;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      width: 100%;
+    }
+
+    input:focus, textarea:focus {
+      outline: 2px solid #00aaff;
+    }
+
+    form button {
+      background: #fff;
+      color: #0077cc;
+      padding: 1rem;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    form button:hover {
+      background: #e6f5ff;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #fff;
+      color: #555;
+      font-size: 0.9rem;
+    }
+
+    /* ANIMATIONS */
+    @keyframes fadeDown {
+      0% { opacity: 0; transform: translateY(-30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeUp {
+      0% { opacity: 0; transform: translateY(30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+
+
+
+
+  <!-- ====== HEADER ====== -->
+  <header>
+    <h1>BrightSmile Dental</h1>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#products">Products</a>
+      <a href="#testimonials">Reviews</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- ====== HERO ====== -->
+  <section class="hero">
+    <h2>Your Smile Deserves the Best Care</h2>
+    <p>Modern, compassionate dental care for the whole family — experience brighter, healthier smiles with our expert team in the USA.</p>
+    <button class="btn">Book Appointment</button>
+  </section>
+
+  <!-- ====== SERVICES ====== -->
+  <section id="services">
+    <h2 class="section-title">Our Dental Services</h2>
+    <p class="section-subtitle">Complete care — from preventive checkups to advanced cosmetic dentistry.</p>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Preventive Care</h3>
+        <p>Keep your teeth healthy with professional cleanings, X-rays, and exams.</p>
+      </div>
+      <div class="card">
+        <h3>Cosmetic Dentistry</h3>
+        <p>Whitening, veneers, and Invisalign® for the smile you’ve always wanted.</p>
+      </div>
+      <div class="card">
+        <h3>Restorative Treatments</h3>
+        <p>Fillings, crowns, and implants to restore strength and beauty to your teeth.</p>
+      </div>
+      <div class="card">
+        <h3>Emergency Dentistry</h3>
+        <p>Same-day appointments available for urgent dental issues or pain relief.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== PRODUCTS ====== -->
+  <section class="products" id="products">
+    <h2 class="section-title">Recommended Products</h2>
+    <p class="section-subtitle">Enhance your at-home oral care with dentist-approved products.</p>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Whitening Kit</h3>
+        <p>Safely brighten your smile between visits.</p>
+      </div>
+      <div class="card">
+        <h3>Electric Toothbrush</h3>
+        <p>Deep, consistent cleaning for a healthier mouth.</p>
+      </div>
+      <div class="card">
+        <h3>Custom Mouthguards</h3>
+        <p>Protect your teeth during sports or sleep.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== TESTIMONIALS ====== -->
+  <section id="testimonials">
+    <h2 class="section-title">What Our Patients Say</h2>
+    <p class="section-subtitle">Real stories from happy smiles.</p>
+
+    <div class="grid">
+      <div class="testimonial">
+        <p>“Dr. Lewis made me feel so comfortable — and my smile has never looked better!”</p>
+        <strong>– Maria S.</strong>
+      </div>
+      <div class="testimonial">
+        <p>“Beautiful office, amazing staff, and painless treatment. Highly recommend BrightSmile!”</p>
+        <strong>– James R.</strong>
+      </div>
+      <div class="testimonial">
+        <p>“Best dental experience I’ve ever had! You can tell they truly care about patients.”</p>
+        <strong>– Angela K.</strong>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== CONTACT ====== -->
+  <section class="contact" id="contact">
+    <h2>Book Your Appointment</h2>
+    <p>Let’s create the smile of your dreams. Fill out the form below, and we’ll contact you soon.</p>
+
+    <form>
+      <input type="text" placeholder="Full Name" required="">
+      <input type="email" placeholder="Email Address" required="">
+      <input type="tel" placeholder="Phone Number" required="">
+      <textarea rows="4" placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer>
+    © 2025 BrightSmile Dental Care | 123 Main Street, City, State | (555) 123-4567
+  </footer>
+
+
+
+
+            <script>// Write JavaScript here</script>
+        
+    
+</body>
